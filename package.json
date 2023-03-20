@@ -1,0 +1,14 @@
+{
+  "name": "lodash-super",
+  "version": "1.0.1-rc0.0.1",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": { 
+  },
+  "keywords": [],
+  "author": "Yaoshine <li825824661@qq.com>",
+  "license": "MIT",
+  "dependencies": { 
+  }
+}
