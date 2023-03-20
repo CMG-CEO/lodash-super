@@ -1,14 +1,9 @@
 /**
- * obj ={
-    label1:'11',
-    label2:'22'
-}
-  
- * arr =[
-    {key:'label1',value:'11',},
-    {key:'label2',value:'22',}
-]
- * 
+ *
+ * @param {Object} obj 待处理的对象
+ * @param {String} key 组成对象的键
+ * @param {String} value 组成对象的值
+ * @returns (Array): 返回生成的新数组
  */
 function obj2array(obj, key = "key", value = "value") {
   const array = [];

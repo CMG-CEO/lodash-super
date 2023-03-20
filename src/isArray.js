@@ -1,5 +1,5 @@
 function isArray(arr) {
-  return Object.prototype.toString(arr) === "[Object Array]";
+  Object.prototype.toString.call(arr) === "[object Array]";
 }
 
 export default isArray;

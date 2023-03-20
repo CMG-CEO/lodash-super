@@ -1,11 +1,11 @@
 {
   "name": "lodash-super",
-  "version": "1.0.1-rc0.0.4",
-  "description": "",
+  "version": "1.0.1-rc1.0.0",
+  "description": "这是一个 lodash 加强版的工具库",
   "main": "index.js",
   "scripts": { 
   },
-  "keywords": [],
+  "keywords": ["lodash","utils"],
   "author": "Yaoshine <li825824661@qq.com>",
   "license": "MIT",
   "dependencies": { 
