@@ -10,7 +10,7 @@ obj ={
 }
  * 
  */
-export default array2obj = (array, key = "key", value = "value") => {
+function array2obj(array, key = "key", value = "value") {
   const object = {};
 
   for (let index = 0; index < array.length; index += 1) {
@@ -18,4 +18,5 @@ export default array2obj = (array, key = "key", value = "value") => {
     object[item[key]] = item[value];
   }
   return object;
-};
+}
+export default array2obj;

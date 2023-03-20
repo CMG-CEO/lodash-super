@@ -1,4 +1,4 @@
-export default filterBy = (array, key, value, name) => {
+function filterBy(array, key, value, name) {
   const result = [];
 
   if (!array.length) {
@@ -16,4 +16,6 @@ export default filterBy = (array, key, value, name) => {
     }
   }
   return undefined;
-};
+}
+
+export default filterBy;

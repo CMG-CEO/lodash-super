@@ -11,4 +11,5 @@ repeat true,['x']
  * 
  */
 
-export default repeatKey = () => {};
+function repeatKey() {}
+export default repeatKey;

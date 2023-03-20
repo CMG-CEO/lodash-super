@@ -10,7 +10,7 @@
 ]
  * 
  */
-export default obj2array = (obj, key = "key", value = "value") => {
+function obj2array(obj, key = "key", value = "value") {
   const array = [];
   Object.keys(obj).forEach((ikey) => {
     const ivalue = obj[ikey];
@@ -20,4 +20,5 @@ export default obj2array = (obj, key = "key", value = "value") => {
     });
   });
   return array;
-};
+}
+export default obj2array;

@@ -1,3 +1,5 @@
-export default isArray = (arr)=>{
-    return Object.prototype.toString(arr) === '[Object Array]' 
+function isArray(arr) {
+  return Object.prototype.toString(arr) === "[Object Array]";
 }
+
+export default isArray;
