@@ -123,3 +123,18 @@ const flag = repeatKey([{ name: 1,} { name: 1 }])
 const flag = repeatKey([{ name1: { name: 1 } }, { name1: { name: 1 } }, { name1: '1' }], ['name1', 'name'])
 // =>  true
 ```
+
+### `_S.filterField(array, comparator)`
+过滤出 对象数组内，满足 `comparator` 条件并为 `true` 的对象，同时也对对象内的 `children` 有效。
+
+> 如果 `children`满足条件，则对应的父级也会被保留
+> `comparator` 也接收一个字符串，对象拥有这个属性会被保留
+#### 例子
+```js
+const field1 = filterField([{ name: 1,children:[{name:1}]} { name: 2 }],(obj) => obj.name ===1)
+// =>  [{name:1,children:[{name:1}}]
+const field2 = filterField([{ name: 2 }, { name:3,children:[{ name: 1 }]  }, (obj) => obj.name ===1])
+// =>  [{name:3,children:[{name:1}}]
+const field1 = filterField([{ name: 1} { name1: 2 }],'name')
+// =>  [{name:1}]
+```

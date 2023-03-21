@@ -27,7 +27,7 @@ function getKeyArray(Object, keyArray) {
   for (let index = 0; index < keyArray.length; index++) {
     const el = keyArray[index];
     if (obj === undefined) {
-      return undefined;
+      break;
     }
     obj = obj[el];
   }
