@@ -1,8 +1,16 @@
 {
   "name": "lodash-super",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "这是一个 lodash 加强版的工具库",
   "main": "index.js",
+  "title": "lodash Super",
+  "bugs": {
+    "url": "https://github.com/CMG-CEO/lodash-super/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CMG-CEO/lodash-super"
+  },
   "scripts": { 
   },
   "keywords": ["lodash","utils"],
