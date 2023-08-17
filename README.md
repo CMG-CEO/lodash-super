@@ -138,3 +138,23 @@ const field2 = filterField([{ name: 2 }, { name:3,children:[{ name: 1 }]  }, (ob
 const field1 = filterField([{ name: 1} { name1: 2 }],'name')
 // =>  [{name:1}]
 ```
+
+
+### `_S.divmod(a, b)`
+
+以两个整数为参数，在作整数除法时，返回商和余数。实现参照Python语言同名函数
+
+> 目前仅支持`a`, `b`都是整数 (严格的`int`类型) 的情况
+> `b` 不能为0
+
+#### 例子
+```js
+const res1 = divmod(10, 4);
+// =>  [2, 2]
+
+const res2 = divmod(10, 5);
+// =>  [2, 0]
+
+const res3 = divmod(10, 100000);
+// =>  [0, 10]
+```
